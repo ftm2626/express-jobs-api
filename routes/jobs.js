@@ -13,6 +13,4 @@ router.route('/').get(getAllJobs).post(createJob)
 // router.get("/:id", getJob).delete("/:id", deleteJob).put("/:id", editJob);
 router.route('/:id').get(getJob).delete(deleteJob).put(editJob)
 
-module.exports = {
-  JobRouter: router,
-};
+module.exports = router
